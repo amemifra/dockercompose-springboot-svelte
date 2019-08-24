@@ -1,0 +1,21 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.12.0",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "sirv-cli": "^0.4.4"
+  },
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build:java": "rm ../Backend/src/main/resources/static/bundle.js.map && rm ../Backend/src/main/resources/static/bundle.js && rm ../Backend/src/main/resources/static/bundle.css.map && rm ../Backend/src/main/resources/static/bundle.css && rollup -c"
+  }
+}
